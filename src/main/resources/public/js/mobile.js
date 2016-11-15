@@ -22,8 +22,8 @@ window.onload = function(){
 			smenu.setAttribute("class","mobile-submenu");
 			smenu.setAttribute("OnClick","submenu("+i+")");
 			getElm[i].appendChild(smenu);
-		};
-	};
+		}
+	}
 	submenu = function (i){
 		var sub = getElm[i].children[1];
 		var b = sub.getAttribute('style');
