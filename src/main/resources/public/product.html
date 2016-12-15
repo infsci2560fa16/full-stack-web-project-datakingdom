@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css">
 	<script src="js/mobile.js" type="text/javascript"></script>
-	<script src="js/util.js" type="text/javascript"></script>
 </head>
 <body>
 	<div id="page">
@@ -45,18 +44,9 @@
 			<div class="header">
 				<div>
 					<h1>Products</h1>
+					<h1><a href="/inventory.html">ORDERED NOW!</a></h1>
 				</div>
 			</div>
-
-			<div style="position:absolute;top:150px;right:50px;font-size:25px;line-height: 250%;background-color: #e2e2e2;padding:10px">
-				Your selectios: <br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input id="summary-kiwi" value="0" style="border:1px solid red;width:25px;font-size:25px"/> Kiwi.<br/>
-				&nbsp;&nbsp;&nbsp;&nbsp;<input id="summary-mango" value="0" style="border:1px solid red;width:25px;font-size:25px"/> Mango. <br/>
-				Total: $&nbsp;&nbsp;<input id="summary-total" value="0" style="border:0 solid red;font-size:25px;width:100px"/>
-				<br/>
-				<input type="submit" value="Submit" onclick="submitForm()" style="font-size:20px"><br/>
-			</div>
-
 			<div>
 				<ul>
 					<li>
@@ -65,23 +55,24 @@
 					</li>
 					<li>
 						<img src="images/kiwi.jpg" alt="">
-						<h2>Kiwi($4.99/ea)</h2> <input type="hidden" id="kiwi-price" value="4.99"><br/>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<button type="button" style = "font-size:20px; font-weight:bold" onclick="operation(1, 'kiwi')"> + </button> &nbsp;&nbsp;
-						<input type="text" style = "font-size:20px;width:25px;height:20px" value ="0" id = "kiwi-value"> &nbsp;&nbsp;
-						<button type="button" style = "font-size:20px; font-weight:bold" onclick="operation(-1, 'kiwi')"> - </button>
+						<h2>Kiwi</h2>
+						<form action="/inventoryinfo">
+						    <input type="submit" value="Show history!" />
+						</form>
 					</li>
 					<li>
 						<img src="images/mango.jpg" alt="">
-						<h2>Mango($3.99/ea)</h2> <input type="hidden" id="mango-price" value="3.99"><br/>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-						<button type="button" style = "font-size:20px; font-weight:bold" onclick="operation(1, 'mango')"> + </button> &nbsp;&nbsp;
-						<input type="text" style = "font-size:20px;width:25px;height:20px" value ="0" id = "mango-value"> &nbsp;&nbsp;
-						<button type="button" style = "font-size:20px; font-weight:bold" onclick="operation(-1, 'mango')"> - </button>
+						<h2>Mango</h2>
+						<form action="/inventoryinfo">
+						    <input type="submit" value="Show history!" />
+						</form>
 					</li>
 					<li>
 						<img src="images/cantaloupe.jpg" alt="">
 						<h2>Cantaloupe</h2>
+						<form action="/inventoryinfo">
+						    <input type="submit" value="Show history!" />
+						</form>
 					</li>
 				</ul>
 				<ul>
@@ -135,5 +126,4 @@
 		</div>
 	</div>
 </body>
-
 </html>
