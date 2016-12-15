@@ -1,4 +1,4 @@
-package helloworld.sophie;
+package web_final.sophie;
 
 import java.sql.*;
 import java.util.HashMap;
@@ -11,8 +11,8 @@ import java.net.URISyntaxException;
 import static spark.Spark.*;
 import spark.template.freemarker.FreeMarkerEngine;
 import spark.ModelAndView;
-import helloworld.sophie.inventoryInfo;
-import helloworld.sophie.insertInventory;
+import web_final.sophie.inventoryInfo;
+import web_final.sophie.insertInventory;
 
 public class Main {
 
